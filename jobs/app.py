@@ -12,7 +12,7 @@ def open_connection ():
     connection.row_factory = sqlite3.Row
     return connection
 
-def execute_sql (sql, values=(), comit=False, signle-False):
+def execute_sql (sql, values=(), comit=False, signle=False):
     connection = open_connection()
     cursor = connection.execute(sql, values)
     if comit == True:
